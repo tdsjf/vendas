@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Venda de Roupas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Venda de Roupas</h1>
+  </header>
+
+  <section>
+    <h2>Produtos</h2>
+    <div id="produtos">
+      <div class="produto">
+        <img src="imagem1.jpg" alt="Camiseta">
+        <h3>Camiseta</h3>
+        <p>R$ 50,00</p>
+        <button onclick="adicionarAoCarrinho('Camiseta', 50)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="imagem2.jpg" alt="Calça">
+        <h3>Calça</h3>
+        <p>R$ 80,00</p>
+        <button onclick="adicionarAoCarrinho('Calça', 80)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="imagem3.jpg" alt="Sapato">
+        <h3>Sapato</h3>
+        <p>R$ 120,00</p>
+        <button onclick="adicionarAoCarrinho('Sapato', 120)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Carrinho de Compras</h2>
+    <div id="carrinho">
+      <ul id="lista-carrinho">
+        <li>Nenhum item no carrinho</li>
+      </ul>
+      <p id="total-carrinho">Total: R$ 0,00</p>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <footer>
+    &copy; 2023 Venda de Roupas
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
